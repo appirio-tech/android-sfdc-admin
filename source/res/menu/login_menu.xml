@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	android:name='Menu'>
+	
+	<item android:id="@+id/menu_prod" android:title="@string/login_prod" />
+	<item android:id="@+id/menu_test" android:title="@string/login_test" />
+	
+</menu>

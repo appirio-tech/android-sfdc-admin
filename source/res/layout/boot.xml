@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:background="@drawable/row_background"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+
+	<TextView 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:text="@string/boot_1"
+		android:textStyle="bold"
+		android:id="@+id/boot_1"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="10dp"
+		android:layout_alignParentTop="true"
+	/>
+	
+	<TextView 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:text="@string/boot_2"
+		android:textColor="#c0c0c0"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="10dp"
+		android:layout_below="@id/boot_1"
+		android:id="@+id/boot_2"
+	/>
+	
+	<TextView 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:text="@string/boot_3"
+		android:textColor="#c0c0c0"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="10dp"
+		android:layout_below="@id/boot_2"
+		android:id="@+id/boot_3"
+	/>
+		
+	<ProgressBar 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/boot_progress"
+		android:indeterminate="true"
+		android:indeterminateOnly="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="10dp"
+		android:layout_below="@id/boot_3"
+	/>
+	
+</RelativeLayout>

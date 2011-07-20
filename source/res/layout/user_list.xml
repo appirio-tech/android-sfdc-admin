@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+>
+
+	<LinearLayout 
+	    android:id="@+id/user_list_footer"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/header_background"
+	    android:layout_alignParentBottom="true"
+	>
+		<TextView
+			android:id="@+id/footer_text"  
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content" 
+		    android:padding="3dp"
+		    android:gravity="right"
+		    android:textColor="@color/footer_text"
+		/>
+		
+	</LinearLayout>
+	
+	<LinearLayout
+		android:id="@+id/user_list_header"
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/search_background"
+    	android:layout_alignParentTop="true"
+	>
+		<EditText
+			android:id="@+id/search_text"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:hint="@string/search_hint"
+			android:lines="1"
+			android:maxLines="1"
+			android:inputType="textFilter"
+			android:imeOptions="actionSearch"
+			android:layout_margin="6dp"
+		/>
+	</LinearLayout>
+		
+	<ListView android:id="@id/android:list"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:clickable="true"
+		android:smoothScrollbar="true" 		
+		android:layout_below="@id/user_list_header"
+		android:layout_above="@id/user_list_footer"
+	/>
+
+     <TextView 
+		android:id="@id/android:empty"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:layout_marginTop="20dp"
+		android:textStyle="bold"
+		android:text="@string/loading"
+		android:layout_below="@id/user_list_header"
+	/>
+    
+
+</RelativeLayout>
+

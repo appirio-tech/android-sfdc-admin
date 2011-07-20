@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+
+	<RelativeLayout
+	  android:id="@+id/detail_header_section"
+	  android:background="@drawable/detail_header_background"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content">
+
+		<ImageView
+			android:id="@+id/detail_photo"
+			android:layout_width="64dp"
+			android:layout_height="64dp"
+			android:layout_margin="6dp"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentLeft="true"
+			android:padding="1px"
+			android:background="@drawable/photo_border"
+			android:src="@drawable/ic_contact_picture"
+		/>
+		
+		<TextView
+			android:id="@+id/detail_name"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp"
+			android:layout_alignParentTop="true"
+			android:layout_alignParentRight="true"
+			android:layout_toRightOf="@id/detail_photo"
+			android:textColor="@color/list_text"
+			android:textStyle="bold"
+			android:textSize="21sp"
+		/>
+	
+		<TableLayout
+			android:id="@+id/detail_table"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/detail_photo"
+			android:layout_margin="5dp"
+		>
+			<TableRow>
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingRight="5dp"
+					android:text="@string/user_title"
+				/>
+				<TextView
+					android:id="@+id/detail_title"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="@color/list_text"
+				/>
+			</TableRow>
+			<TableRow android:layout_marginTop="5dp">
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingRight="5dp"
+					android:text="@string/user_username"
+				/>
+				<TextView
+					android:id="@+id/detail_username"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="@color/list_text"
+				/>
+			</TableRow>
+		</TableLayout>
+
+		<!-- padding -->		
+		<ImageView
+			android:layout_height="5dp"
+			android:layout_width="5dp"
+			android:layout_below="@id/detail_table"
+		/>
+	</RelativeLayout>
+	
+	<RelativeLayout
+	  android:id="@+id/detail_contact_section"
+	  android:background="@drawable/detail_body_background"
+	  android:layout_below="@id/detail_header_section"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content">
+
+		<TextView
+			android:id="@+id/detail_contact_header"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/header_background"
+			android:textColor="@color/header_text"
+			android:text="@string/contact_header"
+			android:padding="3dp"
+		/>
+
+		<TableLayout
+			android:id="@+id/contact_table"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/detail_contact_header"
+			android:layout_margin="5dp"
+		>
+			<TableRow>
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/contact_email"
+					android:paddingRight="5dp"
+				/>
+				<TextView
+					android:id="@+id/contact_email"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:autoLink="email"
+				/>
+			</TableRow>
+			<TableRow android:layout_marginTop="10dp">
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/contact_phone"
+					android:paddingRight="5dp"
+				/>
+				<TextView
+					android:id="@+id/contact_phone"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:autoLink="phone"
+				/>
+			</TableRow>
+			<TableRow android:layout_marginTop="10dp">
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/contact_mobile"
+					android:paddingRight="5dp"
+				/>
+				<TextView
+					android:id="@+id/contact_mobile"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:autoLink="phone"
+				/>
+			</TableRow>
+			<TableRow android:layout_marginTop="10dp">
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/contact_mobile_text"
+					android:paddingRight="5dp"
+				/>
+				<TextView
+					android:id="@+id/contact_mobile_text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:bufferType="spannable"
+					android:linksClickable="true"
+				/>
+			</TableRow>
+		</TableLayout>
+		
+		<!-- padding -->		
+		<ImageView
+			android:layout_height="5dp"
+			android:layout_width="5dp"
+			android:layout_below="@id/contact_table"
+		/>
+		
+	</RelativeLayout>
+	
+	
+	<RelativeLayout
+	  android:background="@drawable/detail_body_background"
+	  android:layout_below="@id/detail_contact_section"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content">
+		
+		<TextView
+			android:id="@+id/detail_action_header"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/header_background"
+			android:textColor="@color/header_text"
+			android:text="@string/action_header"
+			android:padding="3dp"
+		/>
+		
+		<TableLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/detail_action_header"
+			android:stretchColumns="0,1"
+		>
+			<TableRow>
+				<CheckBox
+					android:id="@+id/detail_enabled"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_margin="5dp"
+					android:text="@string/enabled"
+				/>
+				
+				<Button
+					android:id="@+id/detail_reset_pwd"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="12dp"
+					android:text="@string/reset_pwd"
+					android:onClick="resetPasswordClicked"
+					android:layout_margin="5dp"
+				/>
+			</TableRow>
+			<TableRow android:layout_marginTop="5dp">
+
+				<Button
+					android:id="@+id/clone_user"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="12dp"
+					android:text="@string/clone_user"
+					android:onClick="cloneUserClicked"
+					android:layout_margin="5dp"
+				/>
+			</TableRow>
+		</TableLayout>
+	
+	</RelativeLayout>
+	
+</RelativeLayout>

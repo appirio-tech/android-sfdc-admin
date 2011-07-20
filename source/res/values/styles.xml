@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<color name="list_text">#333300</color>
+
+	<color name="header_background">#333300</color>
+	<color name="header_text">#FFFFCC</color>
+	<color name="footer_text">#999966</color>
+</resources>

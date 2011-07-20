@@ -1,0 +1,12 @@
+Android Salesforce.com Admin Application
+
+URL: http://www.cloudspokes.com/challenge_detail.html?contestID=167
+Challenge end date: Mon Apr 18 01:00:00 GMT 2011
+
+Description
+===========
+Develop a native Android app that allows for salesforce.com administrative functions to be handled remotely. An admin&#39;s job is never ends so being able to do some common admin features from the road would greatly simplify an admin&#39;s life. This is not an all encompassing administration application. This competition came from the great idea <a href="https://docs.google.com/a/appirio.com/document/d/1s0EhNK_x2ZQH5lJ1vy03ib0Ez2eBwArdBus2JDn8Hos/edit?hl=en&amp;authkey=CPeq7cIE#" target="_blank">submission</a> from <a href="http://www.cloudspokes.com/profile.html?username=knthornt" target="_blank">knthornt</a>.
+
+Requirements
+============
+You will not be graded on the look and feel of the application. Look and feel will be worth bonus points. <ul><li>Login will be performed using OAuth. Additionally, the application will only allow administrators to log in. </li><li>Provide the capability to reset passwords/unlock users. </li><li>Provide the ability to clone users for new user creation. </li><li>Provide the ability to disable users. </li></ul> If you can think of other admin features you think would add value please feel free to add them.
